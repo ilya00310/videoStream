@@ -1,6 +1,6 @@
 
 CC =	cc
-CFLAGS =  -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Werror -g  -I../nginx-rtmp-module
+CFLAGS =  -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Werror -g  -I/home/ilya/videoStream/nginx-rtmp-module
 CPP =	cc -E
 LINK =	$(CC)
 
@@ -13,7 +13,7 @@ ALL_INCS = -I src/core \
 	-I objs \
 	-I src/http \
 	-I src/http/modules \
-	-I ../nginx-rtmp-module
+	-I /home/ilya/videoStream/nginx-rtmp-module
 
 
 CORE_DEPS = src/core/nginx.h \
@@ -99,16 +99,15 @@ HTTP_DEPS = src/http/ngx_http.h \
 	src/http/ngx_http_script.h \
 	src/http/ngx_http_upstream.h \
 	src/http/ngx_http_upstream_round_robin.h \
-	src/http/modules/ngx_http_ssi_filter_module.h \
-	src/http/modules/ngx_http_ssl_module.h
+	src/http/modules/ngx_http_ssi_filter_module.h
 
 
 HTTP_INCS = -I src/http \
 	-I src/http/modules \
-	-I ../nginx-rtmp-module
+	-I /home/ilya/videoStream/nginx-rtmp-module
 
 
-ADDON_DEPS = $(CORE_DEPS)                                                                   ../nginx-rtmp-module/ngx_rtmp_amf.h                               ../nginx-rtmp-module/ngx_rtmp_bandwidth.h                         ../nginx-rtmp-module/ngx_rtmp_cmd_module.h                        ../nginx-rtmp-module/ngx_rtmp_codec_module.h                      ../nginx-rtmp-module/ngx_rtmp_eval.h                              ../nginx-rtmp-module/ngx_rtmp.h                                   ../nginx-rtmp-module/ngx_rtmp_version.h                           ../nginx-rtmp-module/ngx_rtmp_live_module.h                       ../nginx-rtmp-module/ngx_rtmp_netcall_module.h                    ../nginx-rtmp-module/ngx_rtmp_play_module.h                       ../nginx-rtmp-module/ngx_rtmp_record_module.h                     ../nginx-rtmp-module/ngx_rtmp_relay_module.h                      ../nginx-rtmp-module/ngx_rtmp_streams.h                           ../nginx-rtmp-module/ngx_rtmp_bitop.h                             ../nginx-rtmp-module/ngx_rtmp_proxy_protocol.h                    ../nginx-rtmp-module/hls/ngx_rtmp_mpegts.h                        ../nginx-rtmp-module/dash/ngx_rtmp_mp4.h                                                                                            ../nginx-rtmp-module/ngx_rtmp_amf.h                               ../nginx-rtmp-module/ngx_rtmp_bandwidth.h                         ../nginx-rtmp-module/ngx_rtmp_cmd_module.h                        ../nginx-rtmp-module/ngx_rtmp_codec_module.h                      ../nginx-rtmp-module/ngx_rtmp_eval.h                              ../nginx-rtmp-module/ngx_rtmp.h                                   ../nginx-rtmp-module/ngx_rtmp_version.h                           ../nginx-rtmp-module/ngx_rtmp_live_module.h                       ../nginx-rtmp-module/ngx_rtmp_netcall_module.h                    ../nginx-rtmp-module/ngx_rtmp_play_module.h                       ../nginx-rtmp-module/ngx_rtmp_record_module.h                     ../nginx-rtmp-module/ngx_rtmp_relay_module.h                      ../nginx-rtmp-module/ngx_rtmp_streams.h                           ../nginx-rtmp-module/ngx_rtmp_bitop.h                             ../nginx-rtmp-module/ngx_rtmp_proxy_protocol.h                    ../nginx-rtmp-module/hls/ngx_rtmp_mpegts.h                        ../nginx-rtmp-module/dash/ngx_rtmp_mp4.h                           $(HTTP_DEPS)
+ADDON_DEPS = $(CORE_DEPS)                                                                   /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_amf.h                               /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_bandwidth.h                         /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_cmd_module.h                        /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_codec_module.h                      /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_eval.h                              /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp.h                                   /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_version.h                           /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_live_module.h                       /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_netcall_module.h                    /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_play_module.h                       /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_record_module.h                     /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_relay_module.h                      /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_streams.h                           /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_bitop.h                             /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_proxy_protocol.h                    /home/ilya/videoStream/nginx-rtmp-module/hls/ngx_rtmp_mpegts.h                        /home/ilya/videoStream/nginx-rtmp-module/dash/ngx_rtmp_mp4.h                                                                                            /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_amf.h                               /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_bandwidth.h                         /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_cmd_module.h                        /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_codec_module.h                      /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_eval.h                              /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp.h                                   /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_version.h                           /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_live_module.h                       /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_netcall_module.h                    /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_play_module.h                       /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_record_module.h                     /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_relay_module.h                      /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_streams.h                           /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_bitop.h                             /home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_proxy_protocol.h                    /home/ilya/videoStream/nginx-rtmp-module/hls/ngx_rtmp_mpegts.h                        /home/ilya/videoStream/nginx-rtmp-module/dash/ngx_rtmp_mp4.h                           $(HTTP_DEPS)
 
 
 build:	binary modules manpage
@@ -224,7 +223,6 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/http/modules/ngx_http_split_clients_module.o \
 	objs/src/http/modules/ngx_http_referer_module.o \
 	objs/src/http/modules/ngx_http_rewrite_module.o \
-	objs/src/http/modules/ngx_http_ssl_module.o \
 	objs/src/http/modules/ngx_http_proxy_module.o \
 	objs/src/http/modules/ngx_http_fastcgi_module.o \
 	objs/src/http/modules/ngx_http_uwsgi_module.o \
@@ -385,7 +383,6 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/http/modules/ngx_http_split_clients_module.o \
 	objs/src/http/modules/ngx_http_referer_module.o \
 	objs/src/http/modules/ngx_http_rewrite_module.o \
-	objs/src/http/modules/ngx_http_ssl_module.o \
 	objs/src/http/modules/ngx_http_proxy_module.o \
 	objs/src/http/modules/ngx_http_fastcgi_module.o \
 	objs/src/http/modules/ngx_http_uwsgi_module.o \
@@ -1212,13 +1209,6 @@ objs/src/http/modules/ngx_http_rewrite_module.o:	$(CORE_DEPS) $(HTTP_DEPS) \
 		src/http/modules/ngx_http_rewrite_module.c
 
 
-objs/src/http/modules/ngx_http_ssl_module.o:	$(CORE_DEPS) $(HTTP_DEPS) \
-	src/http/modules/ngx_http_ssl_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(HTTP_INCS) \
-		-o objs/src/http/modules/ngx_http_ssl_module.o \
-		src/http/modules/ngx_http_ssl_module.c
-
-
 objs/src/http/modules/ngx_http_proxy_module.o:	$(CORE_DEPS) $(HTTP_DEPS) \
 	src/http/modules/ngx_http_proxy_module.c
 	$(CC) -c $(CFLAGS) $(CORE_INCS) $(HTTP_INCS) \
@@ -1311,311 +1301,311 @@ objs/src/http/modules/ngx_http_upstream_zone_module.o:	$(CORE_DEPS) $(HTTP_DEPS)
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp.o \
-		../nginx-rtmp-module/ngx_rtmp.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_init.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_init.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_init.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_init.o \
-		../nginx-rtmp-module/ngx_rtmp_init.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_init.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_handshake.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_handshake.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_handshake.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_handshake.o \
-		../nginx-rtmp-module/ngx_rtmp_handshake.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_handshake.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_handler.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_handler.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_handler.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_handler.o \
-		../nginx-rtmp-module/ngx_rtmp_handler.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_handler.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_amf.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_amf.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_amf.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_amf.o \
-		../nginx-rtmp-module/ngx_rtmp_amf.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_amf.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_send.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_send.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_send.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_send.o \
-		../nginx-rtmp-module/ngx_rtmp_send.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_send.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_shared.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_shared.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_shared.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_shared.o \
-		../nginx-rtmp-module/ngx_rtmp_shared.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_shared.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_eval.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_eval.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_eval.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_eval.o \
-		../nginx-rtmp-module/ngx_rtmp_eval.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_eval.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_receive.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_receive.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_receive.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_receive.o \
-		../nginx-rtmp-module/ngx_rtmp_receive.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_receive.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_core_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_core_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_core_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_core_module.o \
-		../nginx-rtmp-module/ngx_rtmp_core_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_core_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_cmd_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_cmd_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_cmd_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_cmd_module.o \
-		../nginx-rtmp-module/ngx_rtmp_cmd_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_cmd_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_codec_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_codec_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_codec_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_codec_module.o \
-		../nginx-rtmp-module/ngx_rtmp_codec_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_codec_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_access_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_access_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_access_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_access_module.o \
-		../nginx-rtmp-module/ngx_rtmp_access_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_access_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_record_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_record_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_record_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_record_module.o \
-		../nginx-rtmp-module/ngx_rtmp_record_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_record_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_live_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_live_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_live_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_live_module.o \
-		../nginx-rtmp-module/ngx_rtmp_live_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_live_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_play_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_play_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_play_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_play_module.o \
-		../nginx-rtmp-module/ngx_rtmp_play_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_play_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_flv_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_flv_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_flv_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_flv_module.o \
-		../nginx-rtmp-module/ngx_rtmp_flv_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_flv_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_mp4_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_mp4_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_mp4_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_mp4_module.o \
-		../nginx-rtmp-module/ngx_rtmp_mp4_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_mp4_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_netcall_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_netcall_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_netcall_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_netcall_module.o \
-		../nginx-rtmp-module/ngx_rtmp_netcall_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_netcall_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_relay_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_relay_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_relay_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_relay_module.o \
-		../nginx-rtmp-module/ngx_rtmp_relay_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_relay_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_bandwidth.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_bandwidth.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_bandwidth.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_bandwidth.o \
-		../nginx-rtmp-module/ngx_rtmp_bandwidth.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_bandwidth.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_exec_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_exec_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_exec_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_exec_module.o \
-		../nginx-rtmp-module/ngx_rtmp_exec_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_exec_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_auto_push_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_auto_push_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_auto_push_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_auto_push_module.o \
-		../nginx-rtmp-module/ngx_rtmp_auto_push_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_auto_push_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_notify_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_notify_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_notify_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_notify_module.o \
-		../nginx-rtmp-module/ngx_rtmp_notify_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_notify_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_log_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_log_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_log_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_log_module.o \
-		../nginx-rtmp-module/ngx_rtmp_log_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_log_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_limit_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_limit_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_limit_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_limit_module.o \
-		../nginx-rtmp-module/ngx_rtmp_limit_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_limit_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_bitop.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_bitop.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_bitop.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_bitop.o \
-		../nginx-rtmp-module/ngx_rtmp_bitop.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_bitop.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_proxy_protocol.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_proxy_protocol.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_proxy_protocol.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_proxy_protocol.o \
-		../nginx-rtmp-module/ngx_rtmp_proxy_protocol.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_proxy_protocol.c
 
 
 objs/addon/hls/ngx_rtmp_hls_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/hls/ngx_rtmp_hls_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/hls/ngx_rtmp_hls_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/hls/ngx_rtmp_hls_module.o \
-		../nginx-rtmp-module/hls/ngx_rtmp_hls_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/hls/ngx_rtmp_hls_module.c
 
 
 objs/addon/dash/ngx_rtmp_dash_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/dash/ngx_rtmp_dash_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/dash/ngx_rtmp_dash_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/dash/ngx_rtmp_dash_module.o \
-		../nginx-rtmp-module/dash/ngx_rtmp_dash_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/dash/ngx_rtmp_dash_module.c
 
 
 objs/addon/hls/ngx_rtmp_mpegts.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/hls/ngx_rtmp_mpegts.c
+	/home/ilya/videoStream/nginx-rtmp-module/hls/ngx_rtmp_mpegts.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/hls/ngx_rtmp_mpegts.o \
-		../nginx-rtmp-module/hls/ngx_rtmp_mpegts.c
+		/home/ilya/videoStream/nginx-rtmp-module/hls/ngx_rtmp_mpegts.c
 
 
 objs/addon/hls/ngx_rtmp_mpegts_crc.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/hls/ngx_rtmp_mpegts_crc.c
+	/home/ilya/videoStream/nginx-rtmp-module/hls/ngx_rtmp_mpegts_crc.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/hls/ngx_rtmp_mpegts_crc.o \
-		../nginx-rtmp-module/hls/ngx_rtmp_mpegts_crc.c
+		/home/ilya/videoStream/nginx-rtmp-module/hls/ngx_rtmp_mpegts_crc.c
 
 
 objs/addon/dash/ngx_rtmp_mp4.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/dash/ngx_rtmp_mp4.c
+	/home/ilya/videoStream/nginx-rtmp-module/dash/ngx_rtmp_mp4.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/dash/ngx_rtmp_mp4.o \
-		../nginx-rtmp-module/dash/ngx_rtmp_mp4.c
+		/home/ilya/videoStream/nginx-rtmp-module/dash/ngx_rtmp_mp4.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_stat_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_stat_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_stat_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_stat_module.o \
-		../nginx-rtmp-module/ngx_rtmp_stat_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_stat_module.c
 
 
 objs/addon/nginx-rtmp-module/ngx_rtmp_control_module.o:	$(ADDON_DEPS) \
-	../nginx-rtmp-module/ngx_rtmp_control_module.c
+	/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_control_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-rtmp-module/ngx_rtmp_control_module.o \
-		../nginx-rtmp-module/ngx_rtmp_control_module.c
+		/home/ilya/videoStream/nginx-rtmp-module/ngx_rtmp_control_module.c
 
 
 manpage:	objs/nginx.8
 
 objs/nginx.8:	man/nginx.8 objs/ngx_auto_config.h
-	sed -e "s|%%PREFIX%%|/usr/local/nginx|" \
-		-e "s|%%PID_PATH%%|/usr/local/nginx/logs/nginx.pid|" \
-		-e "s|%%CONF_PATH%%|/usr/local/nginx/conf/nginx.conf|" \
-		-e "s|%%ERROR_LOG_PATH%%|/usr/local/nginx/logs/error.log|" \
+	sed -e "s|%%PREFIX%%|/home/ilya/videoStream/nginx-1.25.2|" \
+		-e "s|%%PID_PATH%%|/home/ilya/videoStream/nginx-1.25.2/logs/nginx.pid|" \
+		-e "s|%%CONF_PATH%%|/home/ilya/videoStream/nginx-1.25.2/conf/nginx.conf|" \
+		-e "s|%%ERROR_LOG_PATH%%|/home/ilya/videoStream/nginx-1.25.2/logs/error.log|" \
 		< man/nginx.8 > $@
 
 install:	build 
-	test -d '$(DESTDIR)/usr/local/nginx' || mkdir -p '$(DESTDIR)/usr/local/nginx'
+	test -d '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2' || mkdir -p '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2'
 
-	test -d '$(DESTDIR)/usr/local/nginx/sbin' \
-		|| mkdir -p '$(DESTDIR)/usr/local/nginx/sbin'
-	test ! -f '$(DESTDIR)/usr/local/nginx/sbin/nginx' \
-		|| mv '$(DESTDIR)/usr/local/nginx/sbin/nginx' \
-			'$(DESTDIR)/usr/local/nginx/sbin/nginx.old'
-	cp objs/nginx '$(DESTDIR)/usr/local/nginx/sbin/nginx'
+	test -d '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/sbin' \
+		|| mkdir -p '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/sbin'
+	test ! -f '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/sbin/nginx' \
+		|| mv '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/sbin/nginx' \
+			'$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/sbin/nginx.old'
+	cp objs/nginx '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/sbin/nginx'
 
-	test -d '$(DESTDIR)/usr/local/nginx/conf' \
-		|| mkdir -p '$(DESTDIR)/usr/local/nginx/conf'
+	test -d '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf' \
+		|| mkdir -p '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
 
-	cp conf/koi-win '$(DESTDIR)/usr/local/nginx/conf'
-	cp conf/koi-utf '$(DESTDIR)/usr/local/nginx/conf'
-	cp conf/win-utf '$(DESTDIR)/usr/local/nginx/conf'
+	cp conf/koi-win '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
+	cp conf/koi-utf '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
+	cp conf/win-utf '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
 
-	test -f '$(DESTDIR)/usr/local/nginx/conf/mime.types' \
-		|| cp conf/mime.types '$(DESTDIR)/usr/local/nginx/conf'
-	cp conf/mime.types '$(DESTDIR)/usr/local/nginx/conf/mime.types.default'
+	test -f '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/mime.types' \
+		|| cp conf/mime.types '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
+	cp conf/mime.types '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/mime.types.default'
 
-	test -f '$(DESTDIR)/usr/local/nginx/conf/fastcgi_params' \
-		|| cp conf/fastcgi_params '$(DESTDIR)/usr/local/nginx/conf'
+	test -f '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/fastcgi_params' \
+		|| cp conf/fastcgi_params '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
 	cp conf/fastcgi_params \
-		'$(DESTDIR)/usr/local/nginx/conf/fastcgi_params.default'
+		'$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/fastcgi_params.default'
 
-	test -f '$(DESTDIR)/usr/local/nginx/conf/fastcgi.conf' \
-		|| cp conf/fastcgi.conf '$(DESTDIR)/usr/local/nginx/conf'
-	cp conf/fastcgi.conf '$(DESTDIR)/usr/local/nginx/conf/fastcgi.conf.default'
+	test -f '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/fastcgi.conf' \
+		|| cp conf/fastcgi.conf '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
+	cp conf/fastcgi.conf '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/fastcgi.conf.default'
 
-	test -f '$(DESTDIR)/usr/local/nginx/conf/uwsgi_params' \
-		|| cp conf/uwsgi_params '$(DESTDIR)/usr/local/nginx/conf'
+	test -f '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/uwsgi_params' \
+		|| cp conf/uwsgi_params '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
 	cp conf/uwsgi_params \
-		'$(DESTDIR)/usr/local/nginx/conf/uwsgi_params.default'
+		'$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/uwsgi_params.default'
 
-	test -f '$(DESTDIR)/usr/local/nginx/conf/scgi_params' \
-		|| cp conf/scgi_params '$(DESTDIR)/usr/local/nginx/conf'
+	test -f '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/scgi_params' \
+		|| cp conf/scgi_params '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf'
 	cp conf/scgi_params \
-		'$(DESTDIR)/usr/local/nginx/conf/scgi_params.default'
+		'$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/scgi_params.default'
 
-	test -f '$(DESTDIR)/usr/local/nginx/conf/nginx.conf' \
-		|| cp conf/nginx.conf '$(DESTDIR)/usr/local/nginx/conf/nginx.conf'
-	cp conf/nginx.conf '$(DESTDIR)/usr/local/nginx/conf/nginx.conf.default'
+	test -f '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/nginx.conf' \
+		|| cp conf/nginx.conf '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/nginx.conf'
+	cp conf/nginx.conf '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/conf/nginx.conf.default'
 
-	test -d '$(DESTDIR)/usr/local/nginx/logs' \
-		|| mkdir -p '$(DESTDIR)/usr/local/nginx/logs'
+	test -d '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/logs' \
+		|| mkdir -p '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/logs'
 
-	test -d '$(DESTDIR)/usr/local/nginx/logs' \
-		|| mkdir -p '$(DESTDIR)/usr/local/nginx/logs'
+	test -d '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/logs' \
+		|| mkdir -p '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/logs'
 
-	test -d '$(DESTDIR)/usr/local/nginx/html' \
-		|| cp -R html '$(DESTDIR)/usr/local/nginx'
+	test -d '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/html' \
+		|| cp -R html '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2'
 
-	test -d '$(DESTDIR)/usr/local/nginx/logs' \
-		|| mkdir -p '$(DESTDIR)/usr/local/nginx/logs'
+	test -d '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/logs' \
+		|| mkdir -p '$(DESTDIR)/home/ilya/videoStream/nginx-1.25.2/logs'

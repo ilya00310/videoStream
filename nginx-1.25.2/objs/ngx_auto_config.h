@@ -1,4 +1,4 @@
-#define NGX_CONFIGURE " --with-http_ssl_module --add-module=../nginx-rtmp-module"
+#define NGX_CONFIGURE " --prefix=/home/ilya/videoStream/nginx-1.25.2 --add-module=/home/ilya/videoStream/nginx-rtmp-module"
 
 #ifndef NGX_COMPILER
 #define NGX_COMPILER  "gcc 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) "
@@ -413,11 +413,6 @@
 #endif
 
 
-#ifndef NGX_HTTP_SSL
-#define NGX_HTTP_SSL  1
-#endif
-
-
 #ifndef NGX_HTTP_X_FORWARDED_FOR
 #define NGX_HTTP_X_FORWARDED_FOR  1
 #endif
@@ -454,7 +449,7 @@
 
 
 #ifndef NGX_PREFIX
-#define NGX_PREFIX  "/usr/local/nginx/"
+#define NGX_PREFIX  "/home/ilya/videoStream/nginx-1.25.2/"
 #endif
 
 

@@ -16,12 +16,12 @@ modules:
 	$(MAKE) -f objs/Makefile modules
 
 upgrade:
-	/usr/local/nginx/sbin/nginx -t
+	/home/ilya/videoStream/nginx-1.25.2/sbin/nginx -t
 
-	kill -USR2 `cat /usr/local/nginx/logs/nginx.pid`
+	kill -USR2 `cat /home/ilya/videoStream/nginx-1.25.2/logs/nginx.pid`
 	sleep 1
-	test -f /usr/local/nginx/logs/nginx.pid.oldbin
+	test -f /home/ilya/videoStream/nginx-1.25.2/logs/nginx.pid.oldbin
 
-	kill -QUIT `cat /usr/local/nginx/logs/nginx.pid.oldbin`
+	kill -QUIT `cat /home/ilya/videoStream/nginx-1.25.2/logs/nginx.pid.oldbin`
 
 .PHONY:	build install modules upgrade
