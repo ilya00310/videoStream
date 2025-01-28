@@ -90,3 +90,84 @@
 2025/01/28 23:32:02 [error] 206966#0: *9 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
 2025/01/28 23:32:02 [error] 206966#0: *9 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
 2025/01/28 23:32:02 [error] 206966#0: *9 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/28 23:35:02 [notice] 219981#0: signal process started
+2025/01/28 23:35:09 [error] 206966#0: *12 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/28 23:35:09 [error] 206966#0: *12 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/28 23:35:10 [error] 206966#0: *12 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/28 23:35:10 [error] 206966#0: *12 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/28 23:35:11 [error] 206966#0: *12 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:06:19 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_1.ts' (13: Permission denied)
+2025/01/29 00:06:19 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_0.ts' (13: Permission denied)
+2025/01/29 00:06:19 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_2.ts' (13: Permission denied)
+2025/01/29 00:06:19 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_3.ts' (13: Permission denied)
+2025/01/29 00:06:49 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_1.ts' (13: Permission denied)
+2025/01/29 00:06:49 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/hls_master_for_test.m3u8' (13: Permission denied)
+2025/01/29 00:06:49 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_5.ts' (13: Permission denied)
+2025/01/29 00:06:49 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_0.ts' (13: Permission denied)
+2025/01/29 00:06:49 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_2.ts' (13: Permission denied)
+2025/01/29 00:06:49 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_4.ts' (13: Permission denied)
+2025/01/29 00:06:49 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_3.ts' (13: Permission denied)
+2025/01/29 00:06:49 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_6.ts' (13: Permission denied)
+2025/01/29 00:07:18 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_1.ts' (13: Permission denied)
+2025/01/29 00:07:18 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/hls_master_for_test.m3u8' (13: Permission denied)
+2025/01/29 00:07:18 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_5.ts' (13: Permission denied)
+2025/01/29 00:07:18 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_0.ts' (13: Permission denied)
+2025/01/29 00:07:18 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_2.ts' (13: Permission denied)
+2025/01/29 00:07:18 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_4.ts' (13: Permission denied)
+2025/01/29 00:07:18 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_3.ts' (13: Permission denied)
+2025/01/29 00:07:18 [error] 220023#0: hls: cleanup unlink() failed on './ffmpeg/video_segments_6.ts' (13: Permission denied)
+2025/01/29 00:07:32 [notice] 237028#0: signal process started
+2025/01/29 00:07:38 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:53 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:54 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:55 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:55 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:56 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:56 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:56 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:57 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:57 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:57 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:58 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:57 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:57 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:57 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:58 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:58 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:58 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:59 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:07:59 [error] 206966#0: *15 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:14:46 [notice] 241282#0: signal process started
+2025/01/29 00:14:56 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:14:57 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:14:58 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:02 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:02 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:02 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:03 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:03 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:11 [notice] 241610#0: signal process started
+2025/01/29 00:15:13 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:14 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:15 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:15 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:16 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:16 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:16 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:17 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:17 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:17 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:18 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:18 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:18 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:23 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:29 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:15:30 [error] 206966#0: *17 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:17:46 [notice] 243199#0: signal process started
+2025/01/29 00:17:46 [error] 243199#0: open() "/home/ilya/videoStream/nginx-1.25.2/logs/nginx.pid" failed (2: No such file or directory)
+2025/01/29 00:18:32 [error] 206966#0: *20 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:18:32 [error] 206966#0: *20 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:22:11 [notice] 245814#0: signal process started
+2025/01/29 00:22:18 [error] 206966#0: *23 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:22:19 [error] 206966#0: *23 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/01/29 00:22:20 [error] 206966#0: *23 "/home/ilya/videoStream/nginx-1.25.2/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
